@@ -31,24 +31,3 @@ class _MyAppState extends State<MyApp> {
     );
   }
 }
-
-class PersonEntity {
-  int id;
-  String name;
-  String status;
-  String species;
-  String type;
-  String gender;
-  LocationEntity origin;
-  LocationEntity location;
-  String image;
-  List<String> episode;
-  DateTime created;
-}
-
-class LocationEntity {
-  final String name;
-  final String url;
-
-  const LocationEntity({this.name, this.url})
-}
