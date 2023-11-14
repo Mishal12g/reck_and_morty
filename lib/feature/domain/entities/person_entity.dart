@@ -7,8 +7,8 @@ class PersonEntity extends Equatable {
   final String species;
   final String type;
   final String gender;
-  final LocationEntity origin;
-  final LocationEntity location;
+  final LocationEntity? origin;
+  final LocationEntity? location;
   final String image;
   final List<String> episode;
   final DateTime created;
@@ -27,7 +27,6 @@ class PersonEntity extends Equatable {
       required this.created});
 
   @override
-  // TODO: implement props
   List<Object?> get props => [
         id,
         name,
@@ -47,5 +46,5 @@ class LocationEntity {
   final String name;
   final String url;
 
-  LocationEntity(this.name, this.url);
+  LocationEntity({required this.name, required this.url});
 }
