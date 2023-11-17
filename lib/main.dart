@@ -11,7 +11,7 @@ import 'locator_service.dart';
 void main(List<String> args) async {
   WidgetsFlutterBinding.ensureInitialized();
   await di.init();
-  runApp(MyApp());
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
